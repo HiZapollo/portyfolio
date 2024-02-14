@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Zachary Eckenrode</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Zachary Eckenrode</h1>
+        <div class="hamburger" onclick="openSideMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
     </header>
+    <div id="sideMenu" class="side-menu">
+        <a href="#about" onclick="closeSideMenu()">About Me</a>
+        <a href="#projects" onclick="closeSideMenu()">Projects</a>
+        <a href="#contact" onclick="closeSideMenu()">Contact</a>
+    </div>
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
@@ -34,5 +42,6 @@
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -33,7 +33,41 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
     bottom: 0;
-    width: 100%;
+    max-width: 100%;
+}
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+.side-menu a:hover {
+    background-color: #ddd;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
 }
