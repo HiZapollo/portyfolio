@@ -8,21 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Zachary Eckenrode</h1>
         <div class="hamburger" onclick="openSideMenu()">
             &#9776; <!-- Hamburger icon -->
         </div>
+        <h1 class="desktop-title">Zachary Eckenrode</h1>
+        <h1 class="mobile-title">ZE</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <div id="sideMenu" class="side-menu">
         <a href="#about" onclick="closeSideMenu()">About Me</a>
         <a href="#projects" onclick="closeSideMenu()">Projects</a>
         <a href="#contact" onclick="closeSideMenu()">Contact</a>
     </div>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my portfolio! I'm a web developer passionate about creating beautiful and functional websites.</p>

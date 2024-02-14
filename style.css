@@ -4,26 +4,35 @@ body {
     padding: 0;
 }
 header {
-    background-color: #acacac;
+    /* background-color: #acacac; */
     color: #2e7931;
     padding: 20px;
     text-align: center;
 }
 h1 {
     margin: 0;
+    display: inline;
+    float: left;
+}
+.mobile-title{
+    display: none;
 }
 nav {
-    background-color: #acacac;
+    /* background-color: #acacac; */
     padding: 10px 0;
     text-align: center;
+    display: inline;
+    height: auto;
+    float: right;
 }
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #2e7931;
     padding: 10px 20px;
+    font-weight: bold;
 }
 nav a:hover {
-    background-color: #ddd;
+    color: #3ea041;
 }
 section {
     padding: 20px;
@@ -63,12 +72,19 @@ footer {
     cursor: pointer;
     display: none;
     padding: 10px;
+    float: left;
 }
 @media screen and (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: inline;
     }
     nav {
+        display: none;
+    }
+    .mobile-title{
+        display: inline;
+    }
+    .desktop-title{
         display: none;
     }
 }
