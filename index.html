@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zachary Eckenrode</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <div class="hamburger" onclick="openSideMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     <header>
-        <div class="hamburger" onclick="openSideMenu()">
-            &#9776; <!-- Hamburger icon -->
-        </div>
-        <h1 class="desktop-title">Zachary Eckenrode</h1>
+        <!-- <div class="hamburger-menu" onclick="openSideMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div> -->
+        <h1 class="main_title">Zachary Eckenrode</h1>
         <nav>
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
@@ -23,7 +32,7 @@
         <a href="#projects" onclick="closeSideMenu()">Projects</a>
         <a href="#contact" onclick="closeSideMenu()">Contact</a>
     </div>
-    
+
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <p>Welcome to my portfolio! I'm a web developer passionate about creating beautiful and functional websites.</p>
@@ -34,28 +43,25 @@
             <li class="project-list_item">
                 <a href="#" class="project-link">
                     <h3>Project 1</h3>
-                    <img src="./images/Cute_dog.jpg" 
+                    <img src="./images/Cute_dog.jpg"
                         alt="A cute dog laying in the grass, with the back half of its body hiding behind purple flowers"
-                        class="project-image"
-                    >
+                        class="project-image">
                 </a>
             </li>
             <li class="project-list_item">
                 <a href="#" class="project-link">
                     <h3>Project 2</h3>
-                    <img src="./images/Cute_dog.jpg" 
+                    <img src="./images/Cute_dog.jpg"
                         alt="A cute dog laying in the grass, with the back half of its body hiding behind purple flowers"
-                        class="project-image"
-                    >
+                        class="project-image">
                 </a>
             </li>
             <li class="project-list_item">
                 <a href="#" class="project-link">
                     <h3>Project 3</h3>
-                    <img src="./images/Cute_dog.jpg" 
+                    <img src="./images/Cute_dog.jpg"
                         alt="A cute dog laying in the grass, with the back half of its body hiding behind purple flowers"
-                        class="project-image"
-                    >
+                        class="project-image">
                 </a>
             </li>
         </ul>
@@ -69,4 +75,5 @@
     </footer>
     <script src="./index.js"></script>
 </body>
+
 </html>
