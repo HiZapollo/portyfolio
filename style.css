@@ -134,12 +134,59 @@ footer {
 
 .project-list_item {
     width: min-content;
-    padding: 5px;
+    margin: 5px;
+}
+
+.project-fig{
+    margin: 0;
+    display: flex;
+    position: relative;
+    border: #acacac solid 3px;
+    overflow-y: hidden;
+}
+
+.project-title {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 3px;
+    transition: 0.4s;
+    background-color: #acacac;
+}
+
+.project-desc{
+    display: block;
+    position: absolute;
+    z-index: 9;
+    bottom: -80px;
+    left: 0;
+    height: 0;
+    transition: 0.4s;
+    overflow-y: scroll;
 }
 
 .project-image {
     min-width: 16rem;
     max-width: 16vw;
+    transition: 0.4s;
+}
+
+.project-fig:hover {
+
+    .project-image {
+        opacity: .5;
+    }
+
+    .project-title {
+        bottom: 85%;
+    }
+
+    .project-desc{
+        bottom: 20%;
+        height: auto;
+    }
 }
 
 .project-link {
